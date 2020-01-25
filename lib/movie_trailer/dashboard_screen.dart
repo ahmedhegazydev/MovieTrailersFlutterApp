@@ -42,10 +42,13 @@ class DashboardScreen extends StatelessWidget {
                     Container(
 //                  padding: const EdgeInsets.all(10),
                       height: 250,
+//                      width: 150,
+
                       child: ListView(
                         scrollDirection: Axis.horizontal,
                         children: <Widget>[
                           Container(
+
                             child: Padding(
                               padding: const EdgeInsets.all(5),
                               child: Column(
@@ -54,7 +57,7 @@ class DashboardScreen extends StatelessWidget {
 //                                    padding: const EdgeInsets.all(10),
 //                            padding: EdgeInsets.all(10),
 //                          width: double.infinity,
-                                    width: 150,
+                                    width: 130,
                                     height: 200,
                                     decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(10),
@@ -64,6 +67,9 @@ class DashboardScreen extends StatelessWidget {
 //                                fit: BoxFit.cover,
                                           fit: BoxFit.fill,
                                         )),
+                                  ),
+                                  SizedBox(
+                                    height: 10,
                                   ),
                                   Text(
                                     "Love",
@@ -81,6 +87,7 @@ class DashboardScreen extends StatelessWidget {
                             ),
                           ),
                           Container(
+
                             child: Padding(
                               padding: const EdgeInsets.all(5),
                               child: Column(
@@ -89,7 +96,7 @@ class DashboardScreen extends StatelessWidget {
 //                                    padding: const EdgeInsets.all(10),
 //                            padding: EdgeInsets.all(10),
 //                          width: double.infinity,
-                                    width: 150,
+                                    width: 130,
                                     height: 200,
                                     decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(10),
@@ -99,6 +106,9 @@ class DashboardScreen extends StatelessWidget {
 //                                fit: BoxFit.cover,
                                           fit: BoxFit.fill,
                                         )),
+                                  ),
+                                  SizedBox(
+                                    height: 10,
                                   ),
                                   Text(
                                     "Love",
@@ -116,6 +126,7 @@ class DashboardScreen extends StatelessWidget {
                             ),
                           ),
                           Container(
+
                             child: Padding(
                               padding: const EdgeInsets.all(5),
                               child: Column(
@@ -124,7 +135,7 @@ class DashboardScreen extends StatelessWidget {
 //                                    padding: const EdgeInsets.all(10),
 //                            padding: EdgeInsets.all(10),
 //                          width: double.infinity,
-                                    width: 150,
+                                    width: 130,
                                     height: 200,
                                     decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(10),
@@ -134,6 +145,9 @@ class DashboardScreen extends StatelessWidget {
 //                                fit: BoxFit.cover,
                                           fit: BoxFit.fill,
                                         )),
+                                  ),
+                                  SizedBox(
+                                    height: 10,
                                   ),
                                   Text(
                                     "Love",
