@@ -1,6 +1,16 @@
 import 'package:flutter/material.dart';
 
+import 'models/Movie.dart';
+
+
 class HorizontalListItem extends StatelessWidget {
+
+  final int index;
+
+  //const
+//  HorizontalListItem({this.index});//init the index
+  HorizontalListItem(this.index); //init the index
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -17,10 +27,12 @@ class HorizontalListItem extends StatelessWidget {
                 width: 130,
                 height: 200,
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
+                    borderRadius: BorderRadius.circular(5),
                     image: DecorationImage(
                       image: NetworkImage(
-                          "https://moviehole.net/img/maxresdefault-74.jpg"),
+                          recommendedMovieList[index].imageUrl
+//                          "https://moviehole.net/img/maxresdefault-74.jpg"
+                      ),
 //                                fit: BoxFit.cover,
                       fit: BoxFit.fill,
                     )),
@@ -32,7 +44,8 @@ class HorizontalListItem extends StatelessWidget {
               height: 3,
             ),
             Text(
-              "Love",
+              //"Love",
+              recommendedMovieList[index].title,
               style: TextStyle(
 //                            fontWeight: FontWeight.bold,
                 fontWeight: FontWeight.normal,
