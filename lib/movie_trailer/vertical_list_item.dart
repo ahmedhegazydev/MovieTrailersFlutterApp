@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/movie_trailer/models/Movie.dart';
+
+import 'models/Movie.dart';
+
 
 class VerticalListItem extends StatelessWidget {
   final int index;
@@ -33,7 +35,8 @@ class VerticalListItem extends StatelessWidget {
                           fit: BoxFit.fill,
                           image: NetworkImage(
                               //"https://moviehole.net/img/maxresdefault-74.jpg"
-                              bestMovieList[index].imageUrl),
+                              bestMovieList[index].imageUrl
+                          ),
                         )),
                   ),
                   Container(
@@ -43,7 +46,8 @@ class VerticalListItem extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
                           Text(
-                            "Avengers",
+                            //"Avengers",
+                            bestMovieList[index].title,
                             style: TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
@@ -55,7 +59,8 @@ class VerticalListItem extends StatelessWidget {
                           Container(
                             width: 170,
                             child: Text(
-                              "how are u man i hope u well, i wait u for a lot of years, but i couldn't call u as i was fucking busy",
+                              bestMovieList[index].description,
+                              //"how are u man i hope u well, i wait u for a lot of years, but i couldn't call u as i was fucking busy",
                               style: TextStyle(
                                 fontSize: 15,
                                 fontWeight: FontWeight.normal,
