@@ -91,7 +91,7 @@ class DashboardScreen extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      height: 600,
+                      height: 660,
                       padding: EdgeInsets.symmetric(horizontal: 10),
                       //child: ListView(
                       child: ListView.builder(

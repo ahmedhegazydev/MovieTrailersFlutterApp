@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'models/Movie.dart';
 
-
 class VerticalListItem extends StatelessWidget {
   final int index;
 
@@ -13,15 +12,15 @@ class VerticalListItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 200,
+      height: 220,
       child: Column(
         children: <Widget>[
           Card(
-              elevation: 10,
+              elevation: 5,
               child: Row(
                 children: <Widget>[
                   Container(
-                    height: 170,
+                    height: 200,
                     width: 130,
                     decoration: BoxDecoration(
                         borderRadius:
@@ -35,27 +34,37 @@ class VerticalListItem extends StatelessWidget {
                           fit: BoxFit.fill,
                           image: NetworkImage(
                               //"https://moviehole.net/img/maxresdefault-74.jpg"
-                              bestMovieList[index].imageUrl
-                          ),
+                              bestMovieList[index].imageUrl),
                         )),
                   ),
                   Container(
-                      padding: EdgeInsets.all(10),
-                      height: 130,
+//                      padding: EdgeInsets.all(10),
+                      padding: EdgeInsets.all(5),
+                      height: 200,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          Text(
-                            //"Avengers",
-                            bestMovieList[index].title,
-                            style: TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
+
+                          Container(
+                            child: Text(
+                              //"Avengers",
+                              bestMovieList[index].title,
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
+                              maxLines: 2,
+//                            overflow: TextOverflow.ellipsis,
                             ),
+                            width: 170,
                           ),
+
+
                           SizedBox(
                             height: 10,
                           ),
+
+
                           Container(
                             width: 170,
                             child: Text(
